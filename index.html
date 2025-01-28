@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<head>
+<link rel="stylesheet" href="test.css">
+
+<style>
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1170px;
+  border: none; 
+}
+</style>
+
+
+
+</head>
+
+<h1>Television</h1>
+
+
+<style>
+body {
+  background-image: url('tv.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+</style>
+
+<script>
+function light(sw) {
+  var pic;
+  if (sw == 0) {
+    pic = "black.jpg"
+  } if (sw == 1) {
+    pic = "did.jpg"
+  } if (sw == 2) {
+    pic = "rickroll-roll.gif"
+  } if (sw == 3) {
+    pic = "whistle.jpg"
+  } if (sw == 4) {
+    pic = "200.gif"
+  } if (sw == 5) {
+    pic = "giphy-1.gif"
+  } if (sw == 6) {
+    pic = "giphy.gif"
+  } if (sw == 7) {
+    pic = "dvd.gif"
+  } if (sw == 8) {
+    pic = "cat.gif"
+  } if (sw == 9) {
+    pic = "s.gif"
+  } if (sw == 10) {
+    pic = "minion.gif"
+  } if (sw == 11) {
+    pic = "news.gif"
+  }
+
+  document.getElementById('myImage').src = pic;
+}
+</script>
+
+
+<div style="position: relative;">
+   <img src="black.jpg" id="myImage" src="white.jpg" width="1185" height="539"; style="position: absolute; left: 119px; top: 25px;">
+</div>
+
+
+<div class="center">
+  <p>
+<button type="button" onclick="light(0)" style="background-color: red; color: white;border-radius:50px;"><b>POWER BUTTON</b></button>
+<button type="button" onclick="light(1)">1</button>
+<button type="button" onclick="light(2)">2</button>
+<button type="button" onclick="light(3)">3</button>
+<button type="button" onclick="light(4)">4</button>
+<button type="button" onclick="light(5)">5</button>
+<button type="button" onclick="light(6)">6</button>
+<button type="button" onclick="light(7)">7</button>
+<button type="button" onclick="light(8)">8</button>
+<button type="button" onclick="light(9)">9</button>
+<button type="button" onclick="light(10)">10</button>
+<button type="button" onclick="light(11)">11</button>
+</p>
+</div>
+
+
+
+
+
+</body>
+</html>
