@@ -55,11 +55,13 @@ function light(sw) {
   } if (sw == 8) {
     pic = "cat.gif"
   } if (sw == 9) {
-    pic = "s.gif"
-  } if (sw == 10) {
     pic = "minion.gif"
-  } if (sw == 11) {
+  } if (sw == 10) {
     pic = "news.gif"
+  } if (sw == 11) {
+    pic = "car.gif"
+  } if (sw == 12) {
+    pic = "movie.mp4"
   }
 
   document.getElementById('myImage').src = pic;
@@ -67,9 +69,23 @@ function light(sw) {
 </script>
 
 
+
+
 <div style="position: relative;">
    <img src="black.jpg" id="myImage" src="white.jpg" width=83.2%; height="539"; style="position: absolute; left: 8.4%; top: 25px;">
 </div>
+
+
+<style>
+body {
+  background-image: url('tv.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+</style>
+
+
 
 
 <div class="center">
@@ -86,6 +102,7 @@ function light(sw) {
 <button type="button" onclick="light(9)">9</button>
 <button type="button" onclick="light(10)">10</button>
 <button type="button" onclick="light(11)">11</button>
+<button type="button" onclick="light(12)">12</button>
 </p>
 </div>
 
